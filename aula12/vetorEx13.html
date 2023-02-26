@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Campanha Futebol</h1>
+    Indique o resultado:
+    <select id="campanha">
+        <option value="vitoria">Vitória</option>
+        <option value="empate">Empate</option>
+        <option value="derrota">Derrota</option>
+    </select>
+    <button onclick="registra()">Registrar jogo</button>
+    Indique qual jogo quer saber o resultado: <input id="pesquisa" onkeyup="verificar()" placeholder="Apenas número">
+    <br><br>
+    <div id="div_msg"></div>
+    <div id="div_msg2"></div>
+</body>
+
+</html>
+<script src="scriptVetorEx13.js"></script>

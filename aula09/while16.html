@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost</title>
+</head>
+
+<body>
+    Qual a quantidade de elefantes? <input id="ipt_qtd" type="text">
+
+    <button onclick="atazanar()">Atazanar médium</button>
+
+    <div id="div"></div>
+</body>
+
+</html>
+<script>
+
+    function atazanar() {
+        var qtdElefante = ipt_qtd.value
+        var cont1 = 0
+        var cont2 = 0
+
+
+        while (cont1 <= qtdElefante) {
+            ++cont1
+
+            if (cont1 % qtdElefante == 0) {
+
+                div.innerHTML += `<br> ${cont1*2} elefantes, incomodam, muito mais!`
+            }
+
+            else {
+                while (cont2 <= qtdElefante) {
+                cont2++
+                div.innerHTML += `<br> 1 elefante, incomoda, muita gente!`
+            }
+
+            }
+
+        }
+
+       
+
+    }
+
+
+</script>

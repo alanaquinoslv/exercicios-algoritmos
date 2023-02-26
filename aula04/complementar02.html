@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4migas</title>
+</head>
+
+<body>
+    Insira o valor de referencia por grama do sorvete: <input id="ipt_valor_grama" type="text" placeholder="ex:0.00">
+    Insira o peso em grama: <input id="ipt_peso" type="text" placeholder="ex:999">
+    Insira o tipo de cobertura: <input id="ipt_cobertura" type="text" placeholder="ex: c(chocolate) m(morango)">
+
+    <button onclick="calculo()">Ver preço</button>
+    <br><br>
+    <div id="div_msg"></div>
+
+</body>
+<script>
+    function calculo() {
+        var ax_peso = Number(ipt_peso.value)
+        var ax_valor_grama = Number(ipt_valor_grama.value)
+        var ax_cobertura = ipt_cobertura.value
+
+        if (ax_cobertura != `c`) {
+            ax_valor_grama += 0.005
+        }
+
+        var ax_valor_total = ax_valor_grama * ax_peso
+
+        if (ax_valor_total > 10) {
+            div_msg.innerHTML = `Esse sorvete vai custar R$${ax_valor_total.toFixed(2)} e vai comprometer a mesada.`
+        }
+
+        else {
+            div_msg.innerHTML = `Hoje você está maneirando, gastou somente R$${ax_valor_total.toFixed(2)}.`
+        }
+
+    }
+</script>
+
+</html>

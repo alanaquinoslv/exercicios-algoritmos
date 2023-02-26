@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 12</title>
+</head>
+
+<body>
+    <h1>Cofrinho</h1>
+
+    <select id="sel_moeda">
+        <option value="5">R$0,5</option>
+        <option value="10">R$0,10</option>
+        <option value="25">R$0,25</option>
+        <option value="50">R$0,50</option>
+        <option value="1">R$1,00</option>
+    </select>
+
+    <br><br>
+    <h2>O saldo do cofrinho é: <b id="b_saldo">0.00</b></h2>
+    <h2>A quantidade de operações foi: <b id="b_op">0</b></h2>
+    <h2>Média de depósitos: <b id="b_media">0</b></h2>
+
+    <button onclick="deposito()">Depositar</button>
+    <button onclick="gastar()">Gastar a grana</button>
+</body>
+
+</html>
+
+<script src="scriptEx12.js"></script>

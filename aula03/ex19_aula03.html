@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento de obras</title>
+    <h3>Cálculo de orçamento</h3>
+</head>
+<body>
+    <h5>Quantos meses a obra leverá para ser concluída?</h5> <input id="ipt_meses" type="text" placeholder="Digite aqui">
+
+    <h5>Qual o valor do gasto diário?</h5> <input id="ipt_gasto" type="text" placeholder="Digite aqui">
+
+    <button onclick="semanal()"> Projeção semanal</button>
+    <div id="div_semanal"></div>
+
+    <br> <button onclick="mensal()"> Projeção Mensal</button>
+    <div id="div_mensal"></div>
+
+    <br> <button onclick="total()"> Projeção Total</button>
+    <div id="div_total"></div>
+
+</body>
+</html>
+<script src="scriptEx19.js"></script>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 09</title>
+</head>
+
+<body>
+    <h1>Qual o seu Hobby?</h1>
+
+    <br> Qual Hobby você quer praticar?
+
+    <select id="sel_atv" onchange="hobby()">
+        <option value="Danca">Dança</option>
+
+        <option value="Game">VideoGame</option>
+
+        <option value="Assistir">Assistir Streaming</option>
+
+        <option value="Rock">Ouvir rock</option>
+    </select>
+
+    <br> <br> Quantas vezes por semana você vai praticar?
+    <select id="sel_qtd" onchange="mudarImg()">
+        <option value="0">Selecione uma opção</option>
+        <option value="1">1 dia</option>
+        <option value="2">2 dias</option>
+        <option value="3">3 dias</option>
+        <option value="4">4 dias</option>
+        <option value="5">5 dias</option>
+        <option value="6">6 dias</option>
+    </select>
+
+    <br><br>
+
+    <img id="imgDanca"
+        src="https://jornalismofametro.com.br/wp-content/uploads/2021/05/48ac8f97e66f7663670dd849da6dddbf.jpg"
+        alt="Danca" style="width: 0px;">
+
+    <img id="imgGame" src="https://cdn.shopify.com/s/files/1/1061/1924/files/Virus_Emoji_400x400.png" alt="Videogame"
+        style="width: 0px;">
+
+    <img id="imgTv"
+        src="https://img.freepik.com/fotos-gratis/homem-assistindo-servico-de-streaming-na-tv_23-2149047410.jpg?w=2000"
+        alt="Assistir tv" style="width: 0px;">
+
+    <img id="imgRock"
+        src="https://img.freepik.com/fotos-premium/jovem-com-fones-de-ouvido-ouvindo-rock-em-casa_380164-37101.jpg"
+        alt="Ouvir rock" style="width: 0px;">
+
+</body>
+</html>
+
+<script src="scriptEx09.js"></script>

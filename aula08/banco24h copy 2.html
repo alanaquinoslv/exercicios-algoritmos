@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco 24h</title>
+</head>
+
+<body>
+
+
+    <h1>Banco 24h 🏛 </h1>
+
+    <div id="div1">
+        <br><br>
+        Insira a quantidade de cédulas de R$100: <input id="ipt_qtdCem" type="text">
+
+        Insira a quantidade de cédulas de R$50: <input id="ipt_qtdCinq" type="text">
+
+        Insira a quantidade de cédulas de R$10: <input id="ipt_qtdDez" type="text">
+
+        <br><br>
+        <button onclick="iniciar()">Iniciar</button>
+    </div>
+
+
+    <div id="div2">
+        <div id="div_notas"></div>
+    </div>
+
+    <br><br>
+    Qual valor você quer sacar? <input id="ipt_saque" type="text">
+        <button onclick="saque()">Solicitar saque</button>
+
+    <br><br>
+    <div id="div_saque"></div>
+
+</body>
+
+</html>
+
+<script src="scriptBanco24h.js"></script>

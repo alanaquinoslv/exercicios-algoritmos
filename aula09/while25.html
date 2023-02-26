@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while25</title>
+</head>
+
+<body>
+    <h1>Marco 🗻 Nomico </h1>
+
+    Insira o valor já guardado: <input id="ipt_guardado" type="text">
+    Insira o valor poupado a cada mês: <input id="ipt_poupado" type="text">
+    Insira a quantidade de meses: <input id="ipt_qtd_meses" type="text">
+    Insira o percentual de juros mensal: <input id="ipt_juros" type="text">
+
+    <button onclick="poupar()">Vamos poupar</button>
+
+    <div id="div"></div>
+</body>
+
+</html>
+<script>
+
+    var valorGuardado = 0
+    var valorPoupado = 0
+    var qtdMeses = 0
+    var perctJuros = 0
+    var cont = 0
+
+    function poupar() {
+        valorGuardado = Number(ipt_guardado.value)
+        valorPoupado = Number(ipt_poupado.value)
+        qtdMeses = Number(ipt_qtd_meses.value)
+        perctJuros = Number(ipt_juros.value)
+
+        if ((Number.isNaN(valorGuardado))) {
+            alert(`Insira um valor válido`)
+            ipt_guardado.value = ''
+        }
+        else if ((Number.isNaN(valorPoupado))) {
+            alert(`Insira um valor válido`)
+            ipt_poupado.value = ''
+        }
+        else if ((Number.isNaN(qtdMeses))) {
+            alert(`Insira um valor válido`)
+            ipt_qtd_meses.value = ''
+        }
+        else if ((Number.isNaN(perctJuros))) {
+            alert(`Insira um valor válido`)
+            ipt_juros.value = ''
+        }
+        else if (valorPoupado <= 0) {
+            alert (`Você não pode poupar 0 ou menos.`)
+            ipt_poupado.value = ''
+        }
+        else if (qtdMeses <= 10) {
+            alert (`A quantidade de meses precisa ser maior que 10`)
+            ipt_qtd_meses.value = ''
+        }
+        else if (perctJuros < 0.5 || perctJuros > 2) {
+            alert (`O percentual precisa estar entre 0.5 e 2`)
+            ipt_juros.value = ''
+        }
+        else {
+            tratamento()
+        }
+
+        function tratamento() {
+            cont = 1
+
+            while (cont <= qtdMeses) {
+                div.innerHTML = `Mês ${cont} - saldo inicial = ${valorGuardado}`
+            }
+            
+
+
+
+        }
+
+
+    }
+
+
+</script>
